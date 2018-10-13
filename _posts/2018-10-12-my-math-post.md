@@ -2,6 +2,8 @@
 layout: "post"
 ---
 {% include mathjax.html %}
+
+
 Some content.
 you can use an inline formula $$\forall x \in R$$ like this one
 
