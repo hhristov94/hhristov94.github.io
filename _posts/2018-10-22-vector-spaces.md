@@ -54,9 +54,15 @@ d = -1
 v = [0,0,1,3]
 w = [0,0,2,1]
 colors = ['k','silver','silver','orange','k']
+x_ = np.array([c*v[2],c*v[2]+d*w[2]])
+y_ = np.array([c*v[3],c*v[3]+d*w[3]])
+qx = np.array([d*w[2],c*v[2]+d*w[2]])
+qy = np.array([d*w[3],c*v[3]+d*w[3]])
 
 plt.figure(figsize=(20,6))
 plt.subplot(1,2,1)
+plt.plot(x_,y_, color = "silver", dashes = [4,4], zorder = 0)
+plt.plot(qx,qy, color = "silver", dashes = [4,4], zorder = 0)
 plt.quiver([w[0],c*v[0],d*w[0],c*v[0]+d*w[0],v[0]],
            [w[1],c*v[1],d*w[1],c*v[1]+d*w[1],v[1]],
            [w[2],c*v[2],d*w[2],c*v[2]+d*w[2],v[2]],
@@ -67,7 +73,6 @@ plt.ylim(-2, 5)
 # Draw axes
 plt.axvline(x=0, color='#A9A9A9')
 plt.axhline(y=0, color='#A9A9A9')
-plt.scatter(4,7,marker='x',s=50)
 # Draw the name of the vectors
 plt.text(0.2, 2, r'$\vec{v}$', size=18)
 plt.text(1.25, 0.00, r'$\vec{w}$',  size=18)
