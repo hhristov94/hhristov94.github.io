@@ -2,7 +2,8 @@
 title: Linear Independence
 header:
   teaser: /assets/images/solution.png
-tags: Linear-Algebra
+tags: Linear-Indepedence Vectors
+categories: Linear-Algebra
 ---
 {% include mathjax.html %}
 

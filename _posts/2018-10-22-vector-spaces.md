@@ -2,7 +2,8 @@
 title:  "Vector Spaces"
 header:
   teaser: /assets/images/linear_combination.png
-tags: Linear-Algebra
+tags: Vector-Spaces Vectors
+categories: Linear-Algebra
 ---
 {% include mathjax.html %}
 
