@@ -2,6 +2,7 @@
 title:  "Vector Spaces"
 header:
   teaser: /assets/images/linear_combination.png
+tags: Linear-Algebra
 ---
 {% include mathjax.html %}
 
@@ -41,7 +42,7 @@ Five dimentional space is a bit hard to explore though, since we are living in t
 
 If we have two vectors $$v$$ and $$w$$ in the same vector space $$\mathbb{R^2}$$, every linear combination of them in the form $$x = cv + dw$$ for some scalars $$c$$ and $$d$$ should also be in $$\mathbb{R^2}$$.
 
-```python
+{% capture v %}
 %matplotlib inline 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -79,8 +80,10 @@ plt.text(1.25, 0.00, r'$\vec{w}$',  size=18)
 plt.text(-1, 2, r'$\vec{x}$',  size=18)
 
 plt.show()
-```
-![png](/assets/images/linear_combination.png)
+{% endcapture %}
+{% include accordion.html toggle-text=v button-text="Vector Graph" %}
+
+![png](/assets/images/linear_combination.png){: .center-image }
 
 In the above case we scaled $$v$$ by 1.5 and $$w$$ by -1. The result of their addition unsuprisingly is a vector in $$\mathbb{R^2}$$ and doesn't leave the 2D plane that is drawn. In fact, regardless of the choice of scalars every vector that we come up with will still be in this plane or i.e. the same set $$\mathbb{R^2}$$. In mathematics this is also called __closure under addition and scalar multiplication__.
 
@@ -125,7 +128,7 @@ $$
 
 It seems that the span of vectors is indeed a vector space. However since it is contained within another vector space $$V$$, we define it as a __subspace__. Formally, any vector space $$V'$$ is a subspace of $$V$$ if its every element is also an element of $$V$$. To solidify all of this let't plot an example of the span of two vectors $$\hat{i}$$ and $$\hat{j}$$ with length 1 which would form a subspace $$S$$ of $$\mathbb{R^3}$$.
 
-```python
+{% capture w %}
 from mpl_toolkits.mplot3d import Axes3D
 from mpl_toolkits.mplot3d import proj3d
 from matplotlib.patches import FancyArrowPatch
@@ -172,6 +175,7 @@ ax.text(0, 0, 1, r'$\hat{z}$', color='k',size=22)
 ax.text(-2, -2, 0, r'$S$', color='k',size=22)
 ax.text(1.2, 1.5, 0, r'$\vec{x}$', color='k',size=20)
 plt.show()
-```
+{% endcapture %}
+{% include accordion.html toggle-text=w button-text="3D Graph" %}
 
-![png](/assets/images/span.png)
+![png](/assets/images/span.png){: .center-image }
