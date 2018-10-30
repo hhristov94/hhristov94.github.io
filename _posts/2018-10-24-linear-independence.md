@@ -1,8 +1,8 @@
 ---
-title: Linear Independence
+title: Linear Independence, Basis and Dimension
 header:
   teaser: /assets/images/solution.png
-tags: Linear-Indepedence Vectors
+tags: Linear-Indepedence Vectors Basis Dimension
 categories: Linear-Algebra
 ---
 {% include mathjax.html %}
@@ -73,7 +73,7 @@ $$
 -1\begin{bmatrix}4\\4 \end{bmatrix} = 0
 $$
 
-But why is it good to know if a set of vectors is linearly dependent or not. Well, one application is that you can check if a system of equations have an unique solution or not. Consider this system of equations:
+Linear independece( or dependence) also provides and interesting look at system of equations. Consider this one:
 
 $$
   \begin{align}
@@ -214,4 +214,39 @@ plt.plot(np.arange(-10,10,0.01),np.arange(-10,10,0.01)*2, color='#ff3589', zorde
 
 ![png](/assets/images/column_2.png)
 
-We can conclude that linear independence implies some sort of uniqueness.
+Looking at the column pictures can we determine generally if a system $$Ax= b$$ solvable? If the column vectors span the whole vector space then yes, the solution $$b$$ can be expressed as a linear combination of the column vectors.
+
+This is provides a natural transition to the idea of a basis. But in order to understand what a basis in the context of linear algebra means I think it is best to tackle the formal definition first:
+
+A set of elements (vectors) in a vector space $$V$$ is called a basis, or a set of basis vectors, if the vectors are linearly independent and every vector in the vector space is a linear combination of this set. In more general terms, a basis is a linearly independent minimal spanning set of $$V$$.
+
+What this means is that if we have a basis set for a vector space $$V$$, every element of $$V$$ can be expressed uniquely as a linear combination of these basis vectors, whose coefficients are what we are the unit we are measuring with. The simplest example of a basis set is the one which everyone is already using to express things in R3 geometrically:
+
+$$
+{(\begin{bmatrix}1\\0\\0 \end{bmatrix}),
+(\begin{bmatrix}0\\1\\0 \end{bmatrix}),
+(\begin{bmatrix}0\\0\\1 \end{bmatrix}),}
+$$
+
+If we arange the vectors into columns of a matrix we will get the identity operator $$I$$.
+But a vector space can have several distinct sets of basis vectors and that is that is perfectly fine. For example the following set also fits the definition:
+
+$$
+{(\begin{bmatrix}1\\0\\0 \end{bmatrix}),
+(\begin{bmatrix}0\\1\\0 \end{bmatrix}),
+(\begin{bmatrix}0\\1\\1 \end{bmatrix}),}
+$$
+
+Since we are thinking abstractly we can even define a vector space of third degree polynomials and their basis matrix as follows:
+
+$$
+\begin{bmatrix} x^3\\x^2\\x\\1 \end{bmatrix}
+$$
+
+Using functions as a basis is actually pretty useful in machine learning and it is commonly employed as a feaure engineering method. The polynomial expation in particular allows for approximating non-linear functions with a linear model.
+
+Now let’s move to a related concept: the dimension of a vector space, which is defined as the size of the basis and is denoted as $$dim(V)$$. Intuitively we’ve already "seen" that the dimension of \mathbb{R^n} is $$n$$ . If a vector space $$V$$ is spanned by a finite set of vectors, then $$V$$ is set to be __finite-dimensional__.
+
+Most of the time the dimension of a subspace is less than the dimension of the original space, which makes dimension a useful tool for thinking about the “size” of a vector space. In fact, more is true: given a basis $$B'$$ for a subspace $$V'$$ of $$V$$, we can extend the basis by adding more vectors to form a basis B of v.
+
+This becomes important when analyzing bases of subspaces, because we can pick a basis for the subspace, and then pick a basis for the larger space that is guaranteed to be a superset of the original basis.
