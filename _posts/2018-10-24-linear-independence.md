@@ -214,9 +214,9 @@ plt.plot(np.arange(-10,10,0.01),np.arange(-10,10,0.01)*2, color='#ff3589', zorde
 
 ![png](/assets/images/column_2.png)
 
-Looking at the column pictures can we determine generally if a system $$Ax= b$$ solvable? If the column vectors span the whole vector space then yes, the solution $$b$$ can be expressed as a linear combination of the column vectors.
+The pictures provide some visual understanding about infinite and unique solutions but you would agree that it is also important to consider the case when no solutions are available. Can we determine generally if a system $$Ax= b$$ is solvable? As I mentioned earlier when we seek the solution we are actually seeking the scalars that strech the column vectors just so that when they are added together we get $$b$$. Or in other words if $$b$$ is a member of the span of the column vectors, the solution can be expressed as a linear combination of the column vectors.
 
-This is provides a natural transition to the idea of a basis. But in order to understand what a basis in the context of linear algebra means I think it is best to tackle the formal definition first:
+Thinking about spanning space is very awesome but we need to have some orientation in order not to get lost. Mathematicians like to put a marker in the space and orient themselves by it. They call it a basis. But in order to understand what a basis in the context of linear algebra means I think it is best to tackle the formal definition first:
 
 A set of elements (vectors) in a vector space $$V$$ is called a basis, or a set of basis vectors, if the vectors are linearly independent and every vector in the vector space is a linear combination of this set. In more general terms, a basis is a linearly independent minimal spanning set of $$V$$.
 
