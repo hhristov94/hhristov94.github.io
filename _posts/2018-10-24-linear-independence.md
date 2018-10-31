@@ -95,7 +95,7 @@ $$
 After a glance at this one, you will most probably conclude that it has an infinite amount of solutions. What you can also notice is that the row vectors $$
 \begin{bmatrix}1\\2\\3 \end{bmatrix},
 \begin{bmatrix}2\\4\\6 \end{bmatrix}
-$$are actually linearly dependent also.
+$$ are actually linearly dependent also.
 
 We can compare the two systems geometrically to get an even better understanding. Let's first plot the "row picture" of the systems by rearranging and expressing $$y$$ in each of the equations and letting $$x$$ range.
 
@@ -243,9 +243,9 @@ $$
 \begin{bmatrix} x^3\\x^2\\x\\1 \end{bmatrix}
 $$
 
-Using functions as a basis is actually pretty useful in machine learning and it is commonly employed as a feaure engineering method. The polynomial expation in particular allows for approximating non-linear functions with a linear model.
+Using functions as a basis is actually pretty useful in machine learning and it is commonly employed as a feaure engineering method. The polynomial expantion in particular allows for approximating non-linear functions with a linear model.
 
-Now let’s move to a related concept: the dimension of a vector space, which is defined as the size of the basis and is denoted as $$dim(V)$$. Intuitively we’ve already "seen" that the dimension of $$\mathbb{R^n}$$ is $$n$$ . If a vector space $$V$$ is spanned by a finite set of vectors, then $$V$$ is set to be __finite-dimensional__.
+Now let’s move to a related concept: the dimension of a vector space, which is defined as the size of the basis and is denoted as $$dim(V)$$. Intuitively we’ve already "seen" that the dimension of $$\mathbb{R^n}$$ is $$n$$ . Also, if a vector space $$V$$ is spanned by a finite set of vectors, then $$V$$ is set to be __finite-dimensional__.
 
 Most of the time the dimension of a subspace is less than the dimension of the original space, which makes dimension a useful tool for thinking about the “size” of a vector space. In fact, more is true: given a basis $$B'$$ for a subspace $$V'$$ of $$V$$, we can extend the basis by adding more vectors to form a basis B of v.
 

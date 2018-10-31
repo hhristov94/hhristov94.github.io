@@ -7,7 +7,7 @@ categories: Linear-Algebra
 ---
 {% include mathjax.html %}
 
-Formally, a vector space  is a set of objects, called vectors. However, it is important to note that word “vector” in algebra has a much broader sense than just pointy arrows with direction and magnitute. A vector just means an element of a vector space. A suitable candidate for such an element might very well be a matrix or even a function. 
+Formally, a vector space  is a set of objects, called vectors. However, it is important to note that word “vector” in algebra has a much broader sense than just pointy arrows with direction and magnitute. A vector just means an element of a vector space. A suitable candidate for such an element might very well be a matrix or even a function.
 
 Thinking in such an abstract way can be extremely practical but one needs to have some boundaries in defining his thoughts in order to make sense and be useful to others. To qualify as a vector space, the set of objects, which I would refer to as $$V$$, and the operations which are used on them must adhere to a number of requirements called axioms:
 1. Associativity of addition :
@@ -39,7 +39,7 @@ $$v = \begin{pmatrix}
     \end{pmatrix}
 $$
 
-Five dimentional space is a bit hard to explore though, since we are living in the three dimentional world and are not used to thinking so abstract. Let's go to Flatland for a moment and see how everything works in 2D. 
+Five dimentional space is a bit hard to explore though, since we are living in the three dimentional world and are not used to thinking so abstract. Let's go to Flatland for a moment and see how everything works in 2D.
 
 If we have two vectors $$v$$ and $$w$$ in the same vector space $$\mathbb{R^2}$$, every linear combination of them in the form $$x = cv + dw$$ for some scalars $$c$$ and $$d$$ should also be in $$\mathbb{R^2}$$.
 
@@ -88,7 +88,7 @@ plt.show()
 
 In the above case we scaled $$v$$ by 1.5 and $$w$$ by -1. The result of their addition unsuprisingly is a vector in $$\mathbb{R^2}$$ and doesn't leave the 2D plane that is drawn. In fact, regardless of the choice of scalars every vector that we come up with will still be in this plane or i.e. the same set $$\mathbb{R^2}$$. In mathematics this is also called __closure under addition and scalar multiplication__.
 
-This actually gives rise to the idea of actually thinking about all possible linear combinations as a whole.  Specifically, if we have a set of arbitrary vectors $$\{v_1,v_2,...,v_n\} \in V$$, then the set of 
+This actually gives rise to the idea of actually thinking about all possible linear combinations as a whole.  Specifically, if we have a set of arbitrary vectors $$\{v_1,v_2,...,v_n\} \in V$$, then the set of
 $$
 c_1v_1 + c_2v_2 + ... + c_nv_n
 $$
