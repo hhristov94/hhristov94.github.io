@@ -29,7 +29,7 @@ Let's look at an example of a norm. The so called __p-norm__ is defined as follo
 
 $$\|x\|_p = (\sum_{i=1}^n |x_i|^p)^{1/p}$$
 
-For $$p = 1$$ we get the $$L^1$$ norm which is also called the taxicab or Manhattan norm because if we take two arbitrary vectors,say $$x$$ and $$y$$, the distance between them 
+For $$p = 1$$ we get the $$L^1$$ norm which is also called the taxicab or Manhattan norm because if we take two arbitrary vectors,say $$x$$ and $$y$$, the distance between them
 
 $$\|x-y\|_1 = (\sum_{i=1}^n |x_i-y_i|)$$
 

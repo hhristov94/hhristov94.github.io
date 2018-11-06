@@ -1,7 +1,7 @@
 ---
 title: Linear Independence, Basis and Dimension
 header:
-  teaser: /assets/images/solution.png
+  teaser: /assets/images/solution - th.png
 tags: Linear-Indepedence Vectors Basis Dimension
 categories: Linear-Algebra
 ---
@@ -220,7 +220,7 @@ Thinking about spanning space is very awesome but we need to have some orientati
 
 A set of elements (vectors) in a vector space $$V$$ is called a basis, or a set of basis vectors, if the vectors are linearly independent and every vector in the vector space is a linear combination of this set. In more general terms, a basis is a linearly independent minimal spanning set of $$V$$.
 
-What this means is that if we have a basis set for a vector space $$V$$, every element of $$V$$ can be expressed uniquely as a linear combination of these basis vectors, whose coefficients are what we are the unit we are measuring with. The simplest example of a basis set is the one which everyone is already using to express things in R3 geometrically:
+What this means is that if we have a basis set for a vector space $$V$$, every element of $$V$$ can be expressed uniquely as a linear combination of these basis vectors, whose coefficients are what we are the unit we are measuring with. The simplest example of a basis set is the one which everyone is already using to express things in $$\mathbb{R^3}$$  geometrically:
 
 $$
 {(\begin{bmatrix}1\\0\\0 \end{bmatrix}),
