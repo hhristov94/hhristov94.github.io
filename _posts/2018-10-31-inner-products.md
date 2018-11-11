@@ -2,8 +2,6 @@
 title: Norms and Inner Products
 header:
   teaser: /assets/images/unit_norm.png
-tags: Vector-Spaces Vectors
-categories: Linear-Algebra
 ---
 {% include mathjax.html %}
 

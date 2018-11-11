@@ -2,8 +2,6 @@
 title: Linear Independence, Basis and Dimension
 header:
   teaser: /assets/images/solution - th.png
-tags: Linear-Indepedence Vectors Basis Dimension
-categories: Linear-Algebra
 ---
 {% include mathjax.html %}
 
