@@ -5,7 +5,7 @@ header:
 ---
 {% include mathjax.html %}
 
-Last time I finished with a illustration of a sample linear combination of two vectors : $$\hat{i} = \begin{bmatrix}1\\0 \end{bmatrix}$$ and $$\hat{j} = \begin{bmatrix}0\\1 \end{bmatrix}$$ and their 
+Consider a sample linear combination of two vectors : $$\hat{i} = \begin{bmatrix}1\\0 \end{bmatrix}$$ and $$\hat{j} = \begin{bmatrix}0\\1 \end{bmatrix}$$ and their 
 $$ 
  span(\hat{i},\hat{j}) = \mathbb{R^2} 
 $$ which formed a plane.
