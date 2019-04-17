@@ -126,7 +126,7 @@ a_2(c_1v_1 + c_2v_2+ ... + c_nv_n) + ...\\
 a_n(c_1v_1 + c_2v_2+ ... + c_nv_n)
 $$
 
-It seems that the span of vectors is indeed a vector space (no surprise here). However since it is contained within another vector space $$V$$, we define it as a __subspace__. Formally, any vector space $$V'$$ is a subspace of $$V$$ if its every element is also an element of $$V$$. To solidify all of this let't plot an example of the span of two vectors $$\hat{i}$$ and $$\hat{j}$$ with length 1 which would form a subspace $$S$$ of $$\mathbb{R^3}$$.
+It seems that the span of vectors is indeed a vector space (no surprise here). However since it is contained within another vector space $$V$$, we define it as a __subspace__. In this case our Formally, any vector space $$V'$$ is a subspace of $$V$$ if its every element is also an element of $$V$$. To solidify all of this let't plot an example of the span of two vectors $$\hat{i}$$ and $$\hat{j}$$ with length 1 which would form a subspace $$S$$ of $$\mathbb{R^3}$$.
 
 {% capture w %}
 from mpl_toolkits.mplot3d import Axes3D
