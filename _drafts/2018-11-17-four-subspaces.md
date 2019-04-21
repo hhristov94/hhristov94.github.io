@@ -5,7 +5,7 @@ header:
 ---
 {% include mathjax.html %}
 
-As we saw, vector spaces can be “contained” in others, i.e. vector spaces can be subspaces of other vector spaces. As it turns out, the matrix $$A$$  in a system in a linear equations naturally defines four vector spaces:
+As displayed in an earleir of mine , vector spaces can be “contained” in others, i.e. vector spaces can be subspaces of other vector spaces. As it turns out, the matrix $$A$$  in a system in a linear equations naturally defines four vector spaces:
 
 - The column space, or the space spanned by the columns of $$A$$
 

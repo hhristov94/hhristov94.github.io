@@ -546,4 +546,4 @@ array([[ 4., -2.,  2.],
        [ 2., -4., 11.]])
 ```
 
-In the future I'll dedicate a post on scenarios when these algorithms fail and ways on how to correct them.
+In the future I'll dedicate a post on scenarios when these algorithms fail in practice and ways on how to correct them.
